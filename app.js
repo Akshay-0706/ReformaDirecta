@@ -1,7 +1,7 @@
 AOS.init();
 
 var $jq = jQuery.noConflict();
-$jq(document).ready(function() {
+$jq(document).ready(function () {
 
   //========Cities slider index page====
   $jq('.cities-slider').slick({
@@ -15,8 +15,8 @@ $jq(document).ready(function() {
 
   //  =====menu======
 
-  $jq(window).on('scroll', function() {
-    if ($jq(document).scrollTop() > 100) {
+  $jq(window).on('scroll', function () {
+    if ($jq(document).scrollTop() > 400) {
       $jq('#masthead').addClass('back')
     } else {
       $jq('#masthead').removeClass('back')
@@ -25,7 +25,7 @@ $jq(document).ready(function() {
 
 
   // scrollTop
-  $jq(window).on('scroll', function() {
+  $jq(window).on('scroll', function () {
     console.log('scroll')
     if ($jq(this).scrollTop() > 600) {
       $jq('#scroll').fadeIn();
@@ -33,7 +33,7 @@ $jq(document).ready(function() {
       $jq('#scroll').fadeOut();
     }
   });
-  $jq('#scroll').click(function() {
+  $jq('#scroll').click(function () {
     $jq("html, body").animate({
       scrollTop: 0
     }, 600);
